@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Detiles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8bac4d4a65.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-900">
+    <header>
+        <h1 class="text-5xl text-center mt-10 text-white">BANK DETILES <span class="font-semibold text-sky-500">AMAR BANK</span><i class="text-yellow-400 px-3 fa-solid fa-building-columns"></i></h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section>
+            <div class="grid grid-cols-3 gap-3  mt-10">
+                <div class="bg-blue-400 p-16 rounded">
+                    <h3 class="text-white text-4xl mb-2 font-semibold">DEPOSIT</h3>
+                    <h4 class="text-white text-5xl">$<span id="deposit-amount" >00</span>
+                    </h4>
+                </div>
+                <div class="bg-orange-400 p-16 rounded">
+                    <h3 class="text-white text-4xl mb-2 font-semibold">WITHDROW</h3>
+                    <h4 class="text-white text-5xl">$<span id="withdrow-amount">00</span>
+                    </h4>
+                </div>
+                <div class="bg-red-400 p-16 rounded">
+                    <h3 class="text-white text-4xl mb-2 font-semibold">BALANCE</h3>
+                    <h4 class="text-white text-5xl">$<span id="total-balance">1240</span>
+                    </h4>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <div class="bg-lime-300  rounded-md px-5 py-5">
+                    <h1 class="font-semibold text-white mb-2 text-xl">Deposit Amount</h1>
+                    <input id="deposit-input" class="border border-sky-500 rounded bg-gray-100 mb-5 px-3 " type="text" placeholder="Enter Your Deposit Amount">
+                        <br>
+                    <button id="deposit-btn" class="bg-black font-semibold py-1 text-white px-2 border border-black rounded mb-5  ">Deposit</button>
+                </div>
+                <div class="bg-green-300 rounded-md px-5 py-5">
+                    <h1 class="font-semibold text-white mb-2 text-xl">Deposit Amount</h1>
+                    <input id="withdrow-input" class="border border-sky-500 rounded bg-gray-100 mb-5 px-3 " type="text" placeholder="Enter your Withdrow amount">
+                        <br>
+                    <button id="withdrow-btn" class="bg-black font-semibold py-1 text-white px-2 border border-black rounded mb-5  ">Deposit</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="jjs/js/banking.js"></script>
+</body>
+</html>
